@@ -16,3 +16,23 @@ czas_naprawy = int(input("Ile dni będzie trwała naprawa: "))
 if czas_naprawy > 7:
     print("Nie ma takiej możliwości!")
 
+if czas_naprawy <= 7:
+    if dzień_oddania_butów + czas_naprawy == 8:
+        print(1)
+    elif dzień_oddania_butów + czas_naprawy == 9:
+        print(2)
+    elif dzień_oddania_butów + czas_naprawy == 10:
+        print(3)
+    elif dzień_oddania_butów + czas_naprawy == 11:
+        print(4)
+    elif dzień_oddania_butów + czas_naprawy == 12:
+        print(5)
+    elif dzień_oddania_butów + czas_naprawy == 13:
+        print(6)
+    elif dzień_oddania_butów + czas_naprawy == 14:
+        print(7)
+    else:
+        print(f'Buty będą gotowe do odbioru: {dzień_oddania_butów + czas_naprawy}')
+
+
+
