@@ -15,29 +15,19 @@ Program powinien wyliczyć i na końcu wypisać następujące statystyki:
 - maksimum
 '''
 
-suma = None
-srednia = None
-minimum = None
-maximum = None
+liczby = []
 
-while True:
-    dane_wejsciowe = int(input("Podaj liczbę: "))
-    if dane_wejsciowe == "koniec":
-        break
+while len(liczby) < 8:
+    liczba = int(input("Podaj liczbę: "))
+    liczby.append(liczba)
 
-    if dane_wejsciowe.lstrip().isdecimal() is False:
-        print("Niepoprawna wartość!")
-        continue
+print(liczby)
+print(f'Ilość liczby: {len(liczby)}')
 
-    liczba = int(dane_wejsciowe)
+srednia = sum(liczby)/len(liczby)
+print(f'Suma liczb: {sum(liczby)}')
+print(f'Średnia liczb: {srednia}')
 
-    if minimum is None or liczba < minimum:
-        minimum = liczba
-
-    if maximum is None or liczba > maximum:
-        maximum = liczba
-
-    if suma is None or sum(liczba):
-        print(f'Suma wynosi: {sum(liczba)}')
-
+print(f'Minimum: {min(liczby)}')
+print(f'Minimum: {max(liczby)}')
 
